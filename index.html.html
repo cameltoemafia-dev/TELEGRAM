@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Join Our Community</title>
+		<style>
+			body {
+				background: url('https://avn.com/press/video/demi-sutra-debuts-new-onlyfans-scene-with-dredd-138011') center/cover no-repeat fixed;
+				background-color: #0f0f1a;
+				font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+				position: relative;
+min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				margin: 0;
+				padding: 0;
+			}
+			.container {
+				text-align: center;
+				max-width: 90%;
+				width: 600px;
+				padding: 2rem;
+				position: relative;
+				z-index: 2;
+}
+
+			h1 {
+				font-size: 3rem;
+				font-weight: 800;
+				margin-bottom: 2rem;
+				background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+				position: relative;
+				z-index: 2;
+-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-shadow: 0 4px 15px rgba(79, 172, 254, 0.2);
+			}
+
+			.btn {
+				background: linear-gradient(45deg, #08aeea 0%, #2af598 100%);
+				position: relative;
+				z-index: 2;
+border: none;
+				color: white;
+				padding: 1rem 2rem;
+				font-size: 1.2rem;
+				font-weight: 700;
+				border-radius: 50px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				box-shadow: 0 10px 20px -5px rgba(8, 174, 234, 0.4);
+				margin-top: 2rem;
+				display: inline-block;
+				text-decoration: none;
+			}
+
+			.btn:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 15px 30px -5px rgba(8, 174, 234, 0.6);
+			}
+
+			.btn:active {
+				transform: translateY(1px);
+			}
+			.glowing-dots {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 1;
+				background: rgba(15, 15, 26, 0.7);
+}
+
+			.dot {
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				background: rgba(255, 255, 255, 0.6);
+				border-radius: 50%;
+				animation: float 15s infinite linear;
+				opacity: 0;
+			}
+
+			@keyframes float {
+				0% {
+					transform: translateY(0) translateX(0);
+					opacity: 0;
+				}
+				10% {
+					opacity: 0.6;
+				}
+				90% {
+					opacity: 0.6;
+				}
+				100% {
+					transform: translateY(-500px) translateX(200px);
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="glowing-dots" id="dots"></div>
+		<div class="container">
+			<h1>Join the Community</h1>
+			<a href="https://t.me/+3s0Vvsp_Yt8wYmY0" class="btn">Join Free Telegram Group</a>
+<p id="countdown" style="margin-top: 1rem; font-size: 1rem; opacity: 0.8;">Redirecting in 20 seconds...</p>
+</div>
+
+		<script>
+			// Create floating dots
+			for (let i = 0; i < 30; i++) {
+				const dot = document.createElement('div');
+				dot.classList.add('dot');
+				dot.style.left = Math.random() * 100 + '%';
+				dot.style.top = Math.random() * 100 + '%';
+				dot.style.animationDelay = Math.random() * 10 + 's';
+				dot.style.animationDuration = 10 + Math.random() * 10 + 's';
+				document.getElementById('dots').appendChild(dot);
+			}
+			// Countdown and redirect
+			let seconds = 20;
+const countdownEl = document.getElementById('countdown');
+			const countdown = setInterval(() => {
+				seconds--;
+				countdownEl.textContent = `Redirecting in ${seconds} seconds...`;
+if (seconds <= 0) {
+					clearInterval(countdown);
+					window.location.href = "https://t.me/+3s0Vvsp_Yt8wYmY0";
+				}
+			}, 1000);
+</script>
+	</body>
+</html>
